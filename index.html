@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Student Task Manager </title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="dashboard">
+            <h1>Student Hub</h1>
+        
+            <div class="moduleCard" id="taskManagerModule">
+                <h2>📋 Task Manager</h2>
+                <p>Create, organize and track your tasks.</p>
+                <button id="openTaskManager">Open Task Manager</button>
+            </div>
+        </div>
+        
+        
+        <div id="taskManager">
+            <button id="backToDashboard">← Dashboard</button>
+            <div class="headingArea">
+                <h1>My Tasks</h1>
+                <img src="images/cat.jpg" alt="Task Manager">
+            </div>
+        
+            <div class="taskInputArea">
+                <input type="text" id="taskInput" placeholder="enter your task ">
+                <input type="date" id="dueDate">
+                <button id="addtaskbutton">Add your Task </button>
+            </div>
+        
+            <div id="taskList"></div>
+        
+        </div>
+        <div id="deletePopup">
+            <div id="popupBox">
+                <h1>Delete Task?</h1>
+                <p>Are you sure you want to delete this task?</p>
+                <button id="yesButton">Yes</button>
+                <button id="noButton">No</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
